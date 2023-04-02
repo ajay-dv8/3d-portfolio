@@ -19,9 +19,9 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  folio,
+  vinci,
+  dv8,
   threejs,
 } from "../assets";
 
@@ -198,9 +198,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Vinci",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Vinci-ai is a web app that generats images from the user's prompts, you tell vinci what you want in the image or the image you want and it generate's the image. with support from the openai-api.",
     tags: [
       {
         name: "react",
@@ -215,41 +215,21 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: vinci,
+    source_code_link: "https://github.com/ajay-dv8/vinci-ai",
+    app_link: "https://vinciai.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "dv8",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An ai chatbot that generates answers or response to user promts, it can generate computer code from natural language solve math problems generate jokes and do soo much more.",
     tags: [
       {
-        name: "react",
+        name: "vanilla",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "openai-api",
         color: "green-text-gradient",
       },
       {
@@ -257,8 +237,31 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: dv8,
+    source_code_link: "https://github.com/ajay-dv8/dv8-ai",
+    source_code_link: "https://dv8-ai.vercel.app/",
+  },
+  {
+    name: "Portfolio",
+    description:
+      "A responsive portfolio website for with a simple interface, simple and amazing animations and, cool user interface and amazing user experience.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AOS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: folio,
+    source_code_link: "https://github.com/ajay-dv8/vportfolio",
+    app_link: "https://dv8portfolio.netlify.app/",
   },
 ];
 

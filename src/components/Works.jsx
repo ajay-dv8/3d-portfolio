@@ -4,10 +4,10 @@ import { styles } from '../styles'
 import { motion } from 'framer-motion'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
-import { github } from '../assets'
+import { github, opn } from '../assets'
 import { textVariant, fadeIn } from '../utils/motion'
 
-const ProjectCard = ({ index, tags, image, source_code_link, name, description }) => {
+const ProjectCard = ({ index, tags, image, source_code_link, name, description, app_link }) => {
   return(
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
       <Tilt options={{
@@ -20,16 +20,23 @@ const ProjectCard = ({ index, tags, image, source_code_link, name, description }
         <div className="relative w-full h-[230px]">
           <img src={image} alt={name} className='w-full h-full rounded-2xl object-cover'/>
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img-hover">
+          <div className="absolute inset-0 flex gap-2 justify-end m-2 card-img-hover">
             <div onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
                 <img src={github} alt='github' className='w-1/2 h-1/2 object-contain'/>
-              </div>
+            </div>
+
+            <div onClick={() => window.open(app_link, "_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+                <img src={opn} alt='link' className='w-1/2 h-1/2 object-contain'/>
+            </div>
           </div>
         </div>
 
         <div className="mt-5">
+          <div className="flex"></div>
           <h3 className='text-white text-[1.5rem] font-bold'>{name}</h3>
+
           <p className='text-[0.9rem] text-secondary mt-2'>{description}</p>
         </div>
 

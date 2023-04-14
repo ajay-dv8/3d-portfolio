@@ -1,10 +1,12 @@
 import { styles } from '../styles'
 import { motion } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
+import { useRef } from 'react'
 
 const Hero = () => {
+
   return (
-    <section className="relative top-[-1rem] w-full h-screen mx-auto">
+    <section className="relative top-[-1rem] w-full h-screen bg-[url('/src/assets/herobg.png')] bg-cover">
       <div className={`${styles.paddingX} absolute inset-0 top-[7.5rem] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
@@ -19,7 +21,7 @@ const Hero = () => {
         </div>
 
       </div>
-
+   
       <div className="mt-10 w-full h-full">
         <ComputersCanvas />
       </div>

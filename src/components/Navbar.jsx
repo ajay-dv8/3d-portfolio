@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { Link } from 'react-router-dom'

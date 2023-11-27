@@ -1,7 +1,6 @@
 import { styles } from '../styles'
 import { motion } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
-import { useRef } from 'react'
 
 const Hero = () => {
 

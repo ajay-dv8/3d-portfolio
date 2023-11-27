@@ -3,7 +3,7 @@ import { About, Experience, Contact, Feedbacks, Hero, Navbar, StarsCanvas, Works
 import Footer from "./components/footer"
 
 const App = () => {
-
+  
   return (
     <BrowserRouter>
       <div className="bg-primary z-0 relative">
